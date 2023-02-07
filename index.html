@@ -6,8 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
+    <style type="text/tailwindcss">
+      @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+      @layer utilities {
+        .container {
+         @apply max-w-[1176px];
+        }
+      }
+    </style>
 </head>
-<body class="">
-    
+<body class="font-Oswald">
+  <div class="p-12 bg-[url('image.svg')]">
+    <header class="container mx-auto mt-12">
+      <nav class="flex">
+        <ul class="flex justify-between items-center text-sm ml-auto gap-14">
+          <li class="border-b-2 pl-2 border-[#4CAF50]">
+            <a href="#">
+              WORKS
+            </a>
+          </li>
+          <li class="flex flex-col items-end border-[#4CAF50] after:w-4 after:h-[2px] after:bg-[#4CAF50] after:transition-all hover:after:w-[calc(100%+8px)] ">
+            <a href="#">
+              ABOUT
+            </a>
+          </li>
+          <li class="flex flex-col items-end border-[#4CAF50] after:w-4 after:h-[2px] after:bg-[#4CAF50] after:transition-all hover:after:w-[calc(100%+8px)]">
+            <a href="#">
+              SERVICES
+            </a>
+          </li>
+          <li class="flex flex-col items-end border-[#4CAF50] after:w-4 after:h-[2px] after:bg-[#4CAF50] after:transition-all hover:after:w-[calc(100%+8px)]">
+            <a href="#">
+              BLOG
+            </a>
+          </li>
+          <li class="flex flex-col items-end border-[#4CAF50] after:w-4 after:h-[2px] after:bg-[#4CAF50] after:transition-all hover:after:w-[calc(100%+8px)]">
+            <a href="#">
+              CONTACT
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+    <main>
+
+    </main>
 </body>
 </html>
